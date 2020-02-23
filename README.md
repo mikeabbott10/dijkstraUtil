@@ -174,7 +174,7 @@ La struttura della cartella è da considerarsi uguale alla struttura che abbiamo
 ┗ 📜tester.sh
 
 * Proviamo il tester, da terminale: `~/esercizi$ bash tester.sh -gcc lez8es1`\
-Se la compilazione è andata a buon fine è stato creato il file eseguibile _output.out_ all'interno della cartella _lez8es1_ ed è stato eseguito `diff` su ogni testcase.\
+Se la compilazione è andata a buon fine è stato automaticamente creato il file eseguibile _output.out_ all'interno della cartella _lez8es1_ ed è stato eseguito `diff` su ogni testcase.\
 Se la compilazione non è andata a buon fine viene visualizzato un messaggio di errore (ATTENZIONE: se si utilizza la libreria math.h si consiglia di compilare e creare l'eseguibile, nominandolo _output.out_, manualmente col comando _gcc_ e l'aggiunta dell'argomento _-lm_ finale). Se si compila manualmente non è necessario l'argomento _-gcc_ e dunque il comando diventa `~/esercizi$ bash tester.sh lez8es1`
 
 **Output dello script tester.sh**\
