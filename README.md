@@ -78,7 +78,7 @@ _Primo passo:_
 ┗ 📜getLinks.js
 
 _Secondo passo:_
-* Copio da djikstra il link relativo agli allegati e controllo le righe 17 e 19 del file getLinks.js (come spiegato qua: https://github.com/mikeabbott10/djikstraUtil/blob/master/README.md#usage-node-getlinksjs-x-ny )
+* Copio da djikstra il link relativo agli allegati e controllo le righe 17 e 19 del file getLinks.js (come spiegato qua: https://github.com/mikeabbott10/dijkstraUtil#1-getlinksjs )
 * Da terminale: `~/esercizi$ node getLinks.js 8 5`
 * E' stato dunque creato il file _testzips8.txt_. Utiliziamolo per scaricare gli archivi della lezione 8.
 * Da terminale: `~/esercizi$ bash gettests.sh 8`
