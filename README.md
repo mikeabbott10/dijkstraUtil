@@ -2,42 +2,30 @@
 Strumenti utili per dijkstra.di.unipi.it
 
 -----
-## Esempi video:
-1. Download testcase della lezione 1 su http://algo1920.dijkstra.di.unipi.it : https://youtu.be/8Dt743XGtF8
-2. Utilizzo di tester.sh sull'esercizio 3 della lezione 1 su http://algo1920.dijkstra.di.unipi.it : https://youtu.be/p8Hk-3r2Bv8
+## Esempio video:
+1. Utilizzo di tester.sh sull'esercizio 3 della lezione 1 su http://algo1920.dijkstra.di.unipi.it : https://youtu.be/p8Hk-3r2Bv8
 -----
 
-
 Gli strumenti presenti sono 3:
-## 1. getLinks.js
+## 1. getLinks.py
 * Ottiene i link relativi ai testcase (.zip) di una determinata lezione e genera un file di nome _testzipsX.txt_ che li contiene.
-* #### USAGE: `node getLinks.js X nY`
-_dove `X` è il numero relativo alla lezione e `nY` è il numero totale di esercizi presenti all'interno della lezione._\
-**ATTENZIONE**: deve essere installato e funzionante l'ambiente nodejs. Non è necessario inserire questo script ad un percorso particolare per il suo corretto funzionamento, ricorda però che il file di testo generato va posizionato allo stesso livello dello script **gettests.sh** per poter, poi, essere utilizzato.
+* #### USAGE: `python getLinks.py X`
+_dove `X` è il numero relativo alla lezione._\
+**ATTENZIONE**: deve essere installato e funzionante l'ambiente python. Non è necessario inserire questo script ad un percorso particolare per il suo corretto funzionamento, ricorda però che il file di testo generato va posizionato allo stesso livello dello script **gettests.sh** per poter, poi, essere utilizzato.
 
-* **Questo script necessita di un controllo seguito da un'eventuale modifica al codice (righe 17 e 19) per il suo corretto funzionamento su alcune lezioni:**\
-la definizione di url, infatti, deve essere modificata per alcune lezioni (si invita inoltre a fare attenzione al link, alcune lezioni non partono dall'esercizio numero 1!!).\
-Cosa fare:
-  * entrare nel primo esercizio della lezione `X`, della quale si vogliono ottenere i testcase;
-  * cliccare col destro sul tab "Allegati" in alto e selezionare "Copia indirizzo";
-  * controllare che le istruzioni alle righe 17 e 19 dello script soddisfino la "forma" del link copiato;
-  * nel caso si riscontrino incongruenze è necessario modificare le definizioni di `url` alle righe 17 e 19, ad esempio:\
-`url = 'http://prl1920b.dijkstra.di.unipi.it/#/task/Lez'+lez.toString()+'Es0'+es.toString()+'c81___dup/attachments';`\
-non soddisfa la forma della lezione 9, che presenta il seguente link:\
-`http://prl1920b.dijkstra.di.unipi.it/#/task/Lez9Es01c90/attachments`\
-è necessario dunque modificare le definizioni di url (righe 17 e 19) in modo da non avere problemi:
+* **Questo script necessita di un controllo seguito da un'eventuale modifica al codice per il suo corretto funzionamento.**\
+Le definizioni di main_url e lesson_url sono infatti relative al sistema di autovalutazione sul quale si vuole lavorare. Ad esempio, di default, le definizioni sono:
 ```
-[17] url = 'http://prl1920b.dijkstra.di.unipi.it/#/task/Lez'+lez.toString()+'Es0'+es.toString()+'c90/attachments';
-[19] url = 'http://prl1920b.dijkstra.di.unipi.it/#/task/Lez'+lez.toString()+'Es'+es.toString()+'c90/attachments';
+main_url = 'http://algo1920.dijkstra.di.unipi.it/api/lessons'
+lesson_url = 'http://algo1920.dijkstra.di.unipi.it/api/task'
 ```
-*Attenzione*: La lezione 9, in realtà, non parte da `Lez9Es01c90/attachments`, bensì da `Lez9Es00c90/attachments`. Sarà necessaria dunque una modifica ulteriore, che lascio immaginare... :)
-
+Se si vorrà lavorare su un altro sistema di autovalutazione sarà quindi necessario modificare queste due definizioni.
 
 ## 2. gettests.sh
 * Dato un file di testo contenente i link relativi ai testcase da scaricare, li scarica, estrae gli archivi dentro alla cartella _testcase_ corrispondente all'esercizio e rimuove gli archivi.
 * #### USAGE: `bash gettests.sh X`
 _dove `X` è il numero relativo alla lezione._
-Si assume che siano presenti, allo stesso percorso di **gettests.sh**, il file **testzipsX.txt** (creato automaticamente dopo l'esecuzione dello script **getLinks.js**) e le cartelle di nome **lezXesY**.
+Si assume che siano presenti, allo stesso percorso di **gettests.sh**, il file **testzipsX.txt** (creato automaticamente dopo l'esecuzione dello script **getLinks.py**) e le cartelle di nome **lezXesY**.
 
 ## 3. tester.sh
 * Serve per effettuare tutti i test di un esercizio attraverso un unico comando. Esegue, infatti, il comando diff iterativamente su ogni testcase (input-output).
@@ -85,8 +73,7 @@ _Primo passo:_
 ┗ 📜getLinks.js
 
 _Secondo passo:_
-* Copio da djikstra il link relativo agli allegati e controllo le righe 17 e 19 del file getLinks.js (come spiegato qua: https://github.com/mikeabbott10/dijkstraUtil#1-getlinksjs )
-* Da terminale: `~/esercizi$ node getLinks.js 8 5`
+* Da terminale: `~/esercizi$ python getLinks.js 8`
 * E' stato dunque creato il file _testzips8.txt_. Utiliziamolo per scaricare gli archivi della lezione 8.
 * Da terminale: `~/esercizi$ bash gettests.sh 8`
 
