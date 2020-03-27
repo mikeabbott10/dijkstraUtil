@@ -72,7 +72,7 @@ _Primo passo:_
 ┗ 📜getLinks.py
 
 _Secondo passo:_
-* Da terminale: `~/esercizi$ python getLinks.js 8`
+* Da terminale: `~/esercizi$ python getLinks.py 8`
 * E' stato dunque creato il file _testzips8.txt_. Utiliziamolo per scaricare gli archivi della lezione 8.
 * Da terminale: `~/esercizi$ bash gettests.sh 8`
 
