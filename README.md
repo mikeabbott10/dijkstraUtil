@@ -49,7 +49,7 @@ L'esempio include solo gli esercizi della lezione 8, il procedimento per le altr
 ┣ 📜gettests.sh\
 ┣ 📜mkesfolder.sh\
 ┣ 📜tester.sh\
-┗ 📜getLinks.js
+┗ 📜getLinks.py
 
 _Primo passo:_
 * Controllo su djikstra il numero di esercizi della lezione 8 e creo le cartelle tramite lo script **mkesfolder.sh**: da terminale `~/esercizi$ bash mkesfolder.sh 8 5`
@@ -69,7 +69,7 @@ _Primo passo:_
 ┣ 📜gettests.sh\
 ┣ 📜mkesfolder.sh\
 ┣ 📜tester.sh\
-┗ 📜getLinks.js
+┗ 📜getLinks.py
 
 _Secondo passo:_
 * Da terminale: `~/esercizi$ python getLinks.js 8`
@@ -127,7 +127,7 @@ _Secondo passo:_
 ┣ 📜gettests.sh\
 ┣ 📜mkesfolder.sh\
 ┣ 📜tester.sh\
-┣ 📜getLinks.js\
+┣ 📜getLinks.py\
 ┗ 📜testzips8.txt
 
 Abbiamo scaricato tutti i testcase relativi agli esercizi della lezione 8. Possiamo eliminare il file testzip8.txt e spostare l'attenzione su un esercizio per capire come utilizzare _tester.sh_.
