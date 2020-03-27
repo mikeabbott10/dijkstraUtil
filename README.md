@@ -1,11 +1,6 @@
 # djikstraUtil
 Strumenti utili per dijkstra.di.unipi.it
 
------
-## Esempio video:
-1. Utilizzo di tester.sh sull'esercizio 3 della lezione 1 su http://algo1920.dijkstra.di.unipi.it : https://youtu.be/p8Hk-3r2Bv8
------
-
 Gli strumenti presenti sono 3:
 ## 1. getLinks.py
 * Ottiene i link relativi ai testcase (.zip) di una determinata lezione e genera un file di nome _testzipsX.txt_ che li contiene.
@@ -41,6 +36,10 @@ Le cartelle devono essere strutturate come l'esempio mostrato più avanti. Lo sc
 
 Chiunque volesse contribuire effettuando modifiche ai codici o per qualsiasi chiarimento, anche in merito a disfunzioni, si senta libero di scrivermi.
 
+-----
+## Esempio video:
+1. Utilizzo di tester.sh sull'esercizio 3 della lezione 1 su http://algo1920.dijkstra.di.unipi.it : https://youtu.be/p8Hk-3r2Bv8
+-----
 
 # Esempio 1, download dei testcase della lezione 8:
 L'esempio include solo gli esercizi della lezione 8, il procedimento per le altre lezioni è analogo.
