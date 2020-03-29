@@ -6,7 +6,8 @@ Gli strumenti presenti sono 3:
 * Ottiene i link relativi ai testcase (.zip) di una determinata lezione e genera un file di nome _testzipsX.txt_ che li contiene.
 * #### USAGE: `python getLinks.py X`
 _dove `X` è il numero relativo alla lezione._\
-**ATTENZIONE**: deve essere installato e funzionante l'ambiente python. Non è necessario inserire questo script ad un percorso particolare per il suo corretto funzionamento, ricorda però che il file di testo generato va posizionato allo stesso livello dello script **gettests.sh** per poter, poi, essere utilizzato.
+**ATTENZIONE**: deve essere installato e funzionante l'ambiente python. Per il corretto funzionamento è necessario che i seguenti moduli siano installati: requests, json, time. 
+Non è necessario inserire questo script ad un percorso particolare per il suo corretto funzionamento, ricorda però che il file di testo generato va posizionato allo stesso livello dello script **gettests.sh** per poter, poi, essere utilizzato.
 
 * **Questo script necessita di un controllo seguito da un'eventuale modifica al codice per il suo corretto funzionamento.**\
 Le definizioni di main_url e lesson_url sono infatti relative al sistema di autovalutazione sul quale si vuole lavorare. Ad esempio, di default, le definizioni sono:
