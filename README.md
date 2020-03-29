@@ -15,7 +15,7 @@ Le definizioni di main_url e lesson_url sono infatti relative al sistema di auto
 main_url = 'http://algo1920.dijkstra.di.unipi.it/api/lessons'
 lesson_url = 'http://algo1920.dijkstra.di.unipi.it/api/task'
 ```
-Se si vorrà lavorare su un altro sistema di autovalutazione sarà quindi necessario modificare queste due definizioni.
+Se si vorrà lavorare su un altro sistema di autovalutazione sarà quindi necessario modificare il sottodominio di "dijkstra.di.unipi.it" in queste due definizioni.
 
 ## 2. gettests.sh
 * Dato un file di testo contenente i link relativi ai testcase da scaricare, li scarica, estrae gli archivi dentro alla cartella _testcase_ corrispondente all'esercizio e rimuove gli archivi.
