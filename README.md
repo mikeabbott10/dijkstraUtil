@@ -33,7 +33,7 @@ Si assume che **tester.sh** sia allo stesso percorso della cartella **lezXesY**.
 
 ### Attenzione:
 Le cartelle devono essere strutturate come l'esempio mostrato più avanti. Lo script **mkesfolder.sh** permette, tramite 
-`bash mkesfolder.sh X nY` di creare **ny** cartelle di nome *lezXesY* (con X numero lezione e Y da 1 a nY). Ognuna di queste nY cartelle avrà all'interno una cartella nominata "testcase".
+`bash mkesfolder.sh X nY` di creare **nY** cartelle di nome *lezXesY* (con X numero lezione e Y da 1 a nY). Ognuna di queste nY cartelle avrà all'interno una cartella nominata "testcase".
 
 Chiunque volesse contribuire effettuando modifiche ai codici o per qualsiasi chiarimento, anche in merito a disfunzioni, si senta libero di scrivermi.
 
